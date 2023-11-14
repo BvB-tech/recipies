@@ -26,11 +26,6 @@ include ("recipies.php");
                 <div id="recipe5">recept5</div>
                 <div id="recipe6">recept6</div>
             </div>
-            <!-- <div class="recipe">
-                <div id="recipe4">recept4</div>
-                <div id="recipe5">recept5</div>
-                <div id="recipe6">recept6</div>
-            </div> -->
         </div>
         <div class="outlinedrecipe">
             <div id="method">

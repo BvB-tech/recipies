@@ -13,7 +13,6 @@ body{
 .banner, h1{
     color: darkgray;
     text-align: center;
-    /* justify-content: center; */
     padding-bottom: 2.5rem;
 }
 
@@ -29,20 +28,15 @@ body{
 }
 
 .recipecontainer{
-    
+ 
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 100%;
-    /* grid-template-rows: auto auto auto; */
-    /* grid-template-areas: 
-                        "recipiesline1"
-                        "recipiesline1"; */
 }
 
 .recipe{
     background-color: rgb(43, 46, 47);
     display: grid;
-    /* grid-area: recipies; */
     grid-auto-flow: row;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 25vh 25vh;
@@ -62,7 +56,7 @@ body{
 display: grid;
    grid-area: recipe1;
    margin: 0.5rem;
-   border: 1px solid darkblue;
+   border: 1px solid rgb(66, 66, 69);
    background-image: url(./images/roti.jpg);
    background-size: cover;
    border-radius: 5% 5%;
@@ -72,7 +66,7 @@ display: grid;
 display: grid;
    grid-area: recipe2;
    margin: 0.5rem;
-   border: 1px solid darkblue;
+   border: 5px solid rgb(66, 66, 69);
    background-image: url(./images/lasagna.jpeg);
    background-size: cover;
    border-radius: 5% 5%;
@@ -82,7 +76,7 @@ display: grid;
     display: grid;
     grid-area: recipe3;
     margin: 0.5rem;
-    border: 1px solid darkblue;
+    border: 1px solid rgb(66, 66, 69);
     background-image: url(./images/bruine-bonensoep.jpg);
     background-size: cover;
     border-radius: 5% 5%;
@@ -92,21 +86,21 @@ display: grid;
     display: grid;
     grid-area: recipe4;
     margin: 0.5rem;
-    border: 1px solid darkblue;
+    border: 1px solid rgb(66, 66, 69);;
 }
 
 #recipe5{
     display: grid;
     grid-area: recipe5;
     margin: 0.5rem;
-    border: 1px solid darkblue;   
+    border: 1px solidrgb(66, 66, 69);   
 }
     
 #recipe6{
     display: grid;
     grid-area: recipe6;
     margin: 0.5rem;
-    border: 1px solid darkblue;
+    border: 1px solid rgb(66, 66, 69);
 }
 
 .outlinedrecipe{
