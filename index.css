@@ -1,0 +1,136 @@
+body{ 
+    background-color: black;
+
+}
+
+.banner{
+    background-color: rgb(53, 52, 52);
+    height: 10vh;
+    width: 90%;
+    margin: 3rem;
+}
+
+.banner, h1{
+    color: darkgray;
+    text-align: center;
+    /* justify-content: center; */
+    padding-bottom: 2.5rem;
+}
+
+.top{
+ 
+    background-color: rgb(43, 46, 47);
+    border-radius: 15% 15%;
+    background-image: url(./images/herobackground.jpg);
+    background-size: cover;
+    border-radius: 5% 5%;
+    padding: 15rem;
+    margin: 3rem;      
+}
+
+.recipecontainer{
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 100%;
+    /* grid-template-rows: auto auto auto; */
+    /* grid-template-areas: 
+                        "recipiesline1"
+                        "recipiesline1"; */
+}
+
+.recipe{
+    background-color: rgb(43, 46, 47);
+    display: grid;
+    /* grid-area: recipies; */
+    grid-auto-flow: row;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25vh 25vh;
+    grid-template-areas:
+                        "recipe1 recipe2 recipe3"
+                        "recipe4 recipe5 recipe6";
+    margin: 1rem;
+    padding: 1rem;rgb(53, 52, 52);
+
+}
+.hero{
+    background-color: rgb(18, 19, 19);
+    margin: 3rem;
+}
+
+#recipe1{
+display: grid;
+   grid-area: recipe1;
+   margin: 0.5rem;
+   border: 1px solid darkblue;
+   background-image: url(./images/roti.jpg);
+   background-size: cover;
+   border-radius: 5% 5%;
+}
+
+#recipe2{
+display: grid;
+   grid-area: recipe2;
+   margin: 0.5rem;
+   border: 1px solid darkblue;
+   background-image: url(./images/lasagna.jpeg);
+   background-size: cover;
+   border-radius: 5% 5%;
+}      
+
+#recipe3{
+    display: grid;
+    grid-area: recipe3;
+    margin: 0.5rem;
+    border: 1px solid darkblue;
+    background-image: url(./images/bruine-bonensoep.jpg);
+    background-size: cover;
+    border-radius: 5% 5%;
+}
+    
+#recipe4{
+    display: grid;
+    grid-area: recipe4;
+    margin: 0.5rem;
+    border: 1px solid darkblue;
+}
+
+#recipe5{
+    display: grid;
+    grid-area: recipe5;
+    margin: 0.5rem;
+    border: 1px solid darkblue;   
+}
+    
+#recipe6{
+    display: grid;
+    grid-area: recipe6;
+    margin: 0.5rem;
+    border: 1px solid darkblue;
+}
+
+.outlinedrecipe{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    margin: 1rem;
+}
+
+.outlinedrecipe, div{
+    margin: 1rem;
+}
+
+.outlinedrecipe, p{
+    margin: 2rem;
+    
+}
+
+#method, h3{
+    text-align: center;
+}
+
+#method, p{
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 2rem;
+}
