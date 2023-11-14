@@ -15,7 +15,9 @@ include ("recipies.php");
     </header>
     <main>  
         <div class="hero">
-            <div class="top"></div>
+            <div class="top">
+                <div class="banpic"></div>
+            </div>
         </div>
         <div class="recipecontainer">
             <div class="recipe">

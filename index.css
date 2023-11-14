@@ -5,27 +5,42 @@ body{
 
 .banner{
     background-color: rgb(53, 52, 52);
-    height: 10vh;
+    height: auto;
     width: 90%;
-    margin: 3rem;
+    margin-left: 4.5rem;
+    margin-bottom: -2rem;
 }
 
 .banner, h1{
     color: darkgray;
     text-align: center;
-    padding-bottom: 2.5rem;
+    /* padding-bottom: 1rem; */
 }
 
 .top{
+ display: grid;
+ grid-template-columns: auto;
+ grid-template-rows: 35vh;
+ grid-template-areas: "banner";
+ background-color: rgb(43, 46, 47);
  
+}
+
+.banpic{
+    display: grid;
+    grid-area: banner;
+    width: 50%;
     background-color: rgb(43, 46, 47);
-    border: 5px solid rgb(66, 66, 69);
-    border-radius: 10% 10% 10% 10%;
+    border: 5px solid rgb(53, 52, 52);
+    border-radius: 5% 5% 5% 5%;
     background-image: url(./images/herobackground.jpg);
     background-size: cover;
-    border-radius: 5% 5%;
-    padding: 15rem;
-    margin: 3rem;      
+    background-position: top;
+    padding-left: 15rem;
+    padding-left: 15rem;
+    padding-bottom: 5rem;
+    justify-self: center;
+    /* margin: 3rem;       */
 }
 
 .recipecontainer{
@@ -57,7 +72,7 @@ body{
 display: grid;
    grid-area: recipe1;
    margin: 0.5rem;
-   border: 1px solid rgb(66, 66, 69);
+   border: 5px solid rgb(66, 66, 69);
    background-image: url(./images/roti.jpg);
    background-size: cover;
    border-radius: 5% 5%;
@@ -87,14 +102,16 @@ display: grid;
     display: grid;
     grid-area: recipe4;
     margin: 0.5rem;
-    border: 5px solid rgb(66, 66, 69);;
+    border: 5px solid rgb(66, 66, 69);
+    border-radius: 5% 5%;
 }
 
 #recipe5{
     display: grid;
     grid-area: recipe5;
     margin: 0.5rem;
-    border: 5px solid rgb(66, 66, 69);   
+    border: 5px solid rgb(66, 66, 69);
+    border-radius: 5% 5%;  
 }
     
 #recipe6{
@@ -102,6 +119,7 @@ display: grid;
     grid-area: recipe6;
     margin: 0.5rem;
     border: 5px solid rgb(83, 83, 87);
+    border-radius: 5% 5%;
 }
 
 .outlinedrecipe{
