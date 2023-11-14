@@ -20,7 +20,7 @@ body{
  
     background-color: rgb(43, 46, 47);
     border: 5px solid rgb(66, 66, 69);
-    border-radius: 10% 10%;
+    border-radius: 10% 10% 10% 10%;
     background-image: url(./images/herobackground.jpg);
     background-size: cover;
     border-radius: 5% 5%;
