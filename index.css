@@ -45,7 +45,7 @@ body{
                         "recipe1 recipe2 recipe3"
                         "recipe4 recipe5 recipe6";
     margin: 1rem;
-    padding: 1rem;rgb(53, 52, 52);
+    padding: 1rem;
 
 }
 .hero{
@@ -101,7 +101,7 @@ display: grid;
     display: grid;
     grid-area: recipe6;
     margin: 0.5rem;
-    border: 5px solid rgb(66, 66, 69);
+    border: 5px solid rgb(83, 83, 87);
 }
 
 .outlinedrecipe{
