@@ -13,20 +13,16 @@ include ("recipies.php");
     <header class="header">
         
         <div class="menu">    
-        <div id="logo">logo</div> 
-        <div id="menu_item1"><p>home</p></div>
-        <div id="menu_item2"><p>recepten</p></div> 
-        <div id="menu_item3"><p>team</p></div>
-        <div id="menu_item4"><p>contact</p></div> 
+        <div id="logo"></div> 
+        <div id="menu_item1">home</div>
+        <div id="menu_item2">recepten</div> 
+        <div id="menu_item3">team</div>
+        <div id="menu_item4">contact</div> 
         </div>
-        <div class="banner"><p><h1>Recipebook</h1></p></div>    
+        <div id="banner"><h1>Recipebook</h1></div>    
     </header>
     <main class="container">  
-        <div class="hero">
-            
-            <div class="top">
-                <div class="banpic"></div>
-            </div>
+                <div id="hero"></div>
         </div>
         <div class="recipecontainer">
             <div class="recipe">

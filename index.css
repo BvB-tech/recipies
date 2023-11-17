@@ -1,108 +1,135 @@
 * {
     margin: 0;
-    max-width: 480px;
+    max-width: 1650px;
   }
 
 body{ 
     background-color: black;
+    /* width: fit-content; */
 
 }
 
 .header{
-    width: 100%;
-    margin-left: 6rem;
+    width: 95%;
+    
     height: auto;
 
 }
 
 .menu{
-    
-    /* margin-right: 1rem; */
     display: grid;
-    grid-template-columns: 40% 15% 15% 15% 15%;
+    place-items: center;
+    grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto;
     grid-template-areas: 
                         "logo menu1 menu2 menu3 menu4";
+    
                         
 }
 
 #logo{
     grid-area: logo;
-    background-image: url(./images/logo2.avif);
-    height: 75px;
-    width: 50px;
+    background-image: url(./images/logo2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 1rem;
+    height: 150px;
+    width: 100px;
+    border-radius: 10px 10px;
 }
 
 #menu_item1{
     grid-area: menu1;
     color: darkgray;
+    border: 2px solid rgb(93, 93, 96);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
 }
 #menu_item2{
     grid-area: menu2;
     color: darkgray;
+    border: 2px solid rgb(93, 93, 96);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
 }
 
 #menu_item2{
     grid-area: menu2;
     color: darkgray;
+    border: 2px solid rgb(93, 93, 96);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
 }
 #menu_item3{
     grid-area: menu3;
     color: darkgray;
+    border: 2px solid rgb(93, 93, 96);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
 }
 
 #menu_item4{
     grid-area: menu4;
+    border: 2px solid rgb(93, 93, 96);
     color: darkgray;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
+    margin-right: 1rem;
 }
-
-.banner{
-    color: darkgray;
-    text-align: center;
-    border: 5px solid ;
-    background-color: rgb(66, 66, 69);
-}
-
 
 .container{
+    width: 95%;
     display: grid;
+    place-items: center;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
+                        "banner"
                         "hero"
-                        "top"
                         "recipecontainer";
 }
 
-.hero{
-    grid-area: hero;
-    background-color: rgb(18, 19, 19);
-    margin: 3rem;
+#banner{
+    grid-area: banner;
+    color: darkgray;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px;
+    border: 5px solid rgb(53, 52, 52);
+    background-color: rgb(74, 65, 65)
 }
 
-.top{
- grid-template-columns: auto;
- grid-template-rows: 35vh;
- grid-template-areas: "banner";
- background-color: rgb(43, 46, 47);
- 
-}
-
-.banpic{
-    display: grid;
-    /* grid-area: banner; */
-    width: 50%;
+#hero{
+    width: 70%;
+    place-self: center;
     background-color: rgb(43, 46, 47);
     border: 5px solid rgb(53, 52, 52);
     border-radius: 10px 10px;
-    background-image: url(./images/herobackground.jpg);
+    background-image: url(./images/hero2.jpg);
     background-size: cover;
-    background-position: top;
-    padding-left: 22rem;
-    padding-left: 22rem;
-    padding-bottom: 5rem;
-    justify-self: center;
-    /* margin: 3rem;       */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 10rem;
+    padding-left: 10rem;
+    padding-top: 10rem; 
+    padding-bottom: 10rem;   
 }
 
 .recipecontainer{
@@ -123,7 +150,6 @@ body{
                         "recipe4 recipe5 recipe6";
     margin: 1rem;
     padding: 1rem;
-
 }
 
 #recipe1{
