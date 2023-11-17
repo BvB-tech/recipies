@@ -10,11 +10,20 @@ include ("recipies.php");
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="banner"><p><h1>Recipebook</h1></p></div>
+    <header class="header">
+        
+        <div class="menu">    
+        <div id="logo">logo</div> 
+        <div id="menu_item1"><p>home</p></div>
+        <div id="menu_item2"><p>recepten</p></div> 
+        <div id="menu_item3"><p>team</p></div>
+        <div id="menu_item4"><p>contact</p></div> 
+        </div>
+        <div class="banner"><p><h1>Recipebook</h1></p></div>    
     </header>
-    <main>  
+    <main class="container">  
         <div class="hero">
+            
             <div class="top">
                 <div class="banpic"></div>
             </div>
