@@ -15,7 +15,7 @@ include ("recipies.php");
         <div class="menu">    
         <div id="logo"></div> 
         <div id="menu_item1">home</div>
-        <div id="menu_item2">recepten</div> 
+        <div id="menu_item2">recipies</div> 
         <div id="menu_item3">team</div>
         <div id="menu_item4">contact</div> 
         </div>
@@ -26,12 +26,36 @@ include ("recipies.php");
         </div>
         <div class="recipecontainer">
             <div class="recipe">
-                <div id="recipe1"><a href="recipe1.php"><p><?php print $rows[0]['recipename'];?></></p></a></div>
-                <div id="recipe2"><a href="recipe2.php"><p><?php print $rows[1]['recipename'];?></></p></a></div>
-                <div id="recipe3"><a href="recipe3.php"><p><?php print $rows[2]['recipename'];?></></p></a></div>
-                <div id="recipe4">recept4</div>
-                <div id="recipe5">recept5</div>
-                <div id="recipe6">recept6</div>
+                <div id="recipe1">
+                    <a href="recipe1.php">
+                        <p> <?php print $rows[0]['recipename'];?></p>
+                    </a>  
+                </div>
+                <div id="recipe2">
+                    <a href="recipe2.php">
+                        <p> <?php print $rows[1]['recipename'];?></p>
+                    </a>  
+                </div>
+                <div id="recipe3">
+                    <a href="recipe3.php">
+                        <p> <?php print $rows[2]['recipename'];?></p>
+                    </a>  
+                </div>
+                <div id="recipe4">
+                    <a href="recipe4.php">
+                        <p> <?php print $rows[3]['recipename'];?></p>
+                    </a>  
+                </div>
+                <div id="recipe5">
+                    <a href="recipe5.php">
+                        <p> <?php print $rows[4]['recipename'];?></p>
+                    </a>  
+                </div>
+                <div id="recipe6">
+                    <a href="recipe6.php">
+                        <p> <?php print $rows[5]['recipename'];?></p>
+                    </a>  
+                </div>
             </div>
         </div>
         <div class="outlinedrecipe">
