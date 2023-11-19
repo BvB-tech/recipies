@@ -245,3 +245,44 @@ display: grid;
     padding-bottom: 1rem;
     margin: 2rem;
 }
+
+.footershell{
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px 10px;
+    border: 7px solid rgb(93, 93, 96);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+                        "company company established established"
+                        "disclaimer disclaimer disclaimer disclaimer"
+                        "copyright copyright copyright copyright"
+                        "socials socials socials socials";
+}
+
+#company{
+    grid-area: company;
+    background-image: url(./images/companylogo.jpeg);
+    width: 200px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+#established{
+    grid-area: established;
+    justify-content: left;
+}
+
+#disclaimer{
+    grid-area: disclaimer;
+}
+
+#socials{
+    grid-area: socials;
+}

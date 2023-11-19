@@ -82,7 +82,15 @@ That smile gives me the confidence, that smile is my pillar and inspiration, tha
     </main>
 
     <footer>
-        
+        <div class="footershell">
+            <div class="footer">
+                <div id="company"></div>
+                <div id="established">est and around since 1889</div>
+                <div id="disclamer">We're not responsible for burned food or bad tasting food</div>
+                <div id="copyright">all rights reserved</div>
+                <div id="socials">facebook instagram x youtube</div>
+            </div>
+        </div>
     </footer>
 
 </body>
