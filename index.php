@@ -81,5 +81,9 @@ That smile gives me the confidence, that smile is my pillar and inspiration, tha
     
     </main>
 
+    <footer>
+        
+    </footer>
+
 </body>
 </html>

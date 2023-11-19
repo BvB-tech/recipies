@@ -155,7 +155,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    text-shadow: beige;
+    text-shadow: 2px 2px beige;
 }
 
 #recipe1{
