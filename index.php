@@ -58,7 +58,7 @@ include ("recipies.php");
                 </div>
             </div>
         </div>
-    <div class="outlinedrecipe">
+    <div class="introduction">
         <div id="method">
         <h3>introduction</h3>
         <p>The majority of us love to cook or at least try to cook some food, perhaps daily or on special occasions. We do keep recipes, some in the papers, some have organized books, some scribbled it on a convenient place like kitchen boards, some just permanently place them on their brains.
@@ -85,10 +85,10 @@ That smile gives me the confidence, that smile is my pillar and inspiration, tha
         <div class="footershell">
             <div class="footer">
                 <div id="company"></div>
-                <div id="established">est and around since 1889</div>
+                <div id="established"><p>est and around since 1889</p></div>
                 <div id="disclamer">We're not responsible for burned food or bad tasting food</div>
                 <div id="copyright">all rights reserved</div>
-                <div id="socials">facebook instagram x youtube</div>
+                <div id="socials"><p>facebook instagram x youtube<</p>/div>
             </div>
         </div>
     </footer>
