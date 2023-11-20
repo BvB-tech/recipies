@@ -8,7 +8,7 @@ require ("DbaseConn.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="RecipeDisplay.css">
 </head>
 <body>
     <header class="header">    
@@ -25,40 +25,33 @@ require ("DbaseConn.php");
     <main class="container">  
         <div id="hero"></div>
         </div>
-        <div id="recipename">  
-            <h3>
-                <?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                        print $recipeSelect[0]['recipename']
-                ?>
-            </h3>
-        </div>
-
-        <div class="recipe">
-            <div id="description">
-                <h3>introduction</h3>
-                <p>
-                <?php print $recipeSelect[0]['description'];?>
-                </p>
+        <div class="recipecontainer">
+            <div id="recipename">  
+                <h3>
+                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);
+                            print $recipeSelect[0]['recipename']
+                    ?>
+                </h3>
             </div>
 
-            <div id="method">
-                <h3>instructions</h3>
-                <p>
-                <?php print $recipeSelect[0]['method'];?>
-                </p>
-            </div>
-    
-            <div class="ingredientsList">
-                <div id="ingredients">
-                <h3>ingredients</h3>
-                <p>
-                <?php print $recipeSelect[0]['description'];?>
-                </p>
-            </div>
-        </div>
-            
+            <div class="recipe">
+                <div id="description">
+                    <h3>introduction</h3>
+                    <?php print $recipeSelect[0]['description'];?>
+                </div>
 
+                <div id="method">
+                    <h3>instructions</h3>
+                    <?php print $recipeSelect[0]['method'];?>
+                </div>
         
+                <div class="ingredientsList">
+                    <div id="ingredients">
+                    <h3>ingredients</h3>
+                    <?php print $recipeSelect[0]['ingredients'];?>
+                </div>
+            </div>
+        </div>   
     </main>
 
     <footer>

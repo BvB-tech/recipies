@@ -26,13 +26,14 @@ require ("DbaseConn.php");
         <div class="recipecontainer">
             <div class="recipe">
                 <div id="recipe1">
-                    <h6><?php $recipe = (new Dbase())->dbaseSelectAll();
+                    <p><?php $recipe = (new Dbase())->dbaseSelectAll();
                         echo $recipe[0]['recipename'];?>
-                    </h6>
+                    </p>
+                    
                     <a href="RecipeDisplay.php">
                         <p> <?php 
                         $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                        echo var_dump($recipeSelect);
+                        
 
                         ?></p>
                     </a>  
