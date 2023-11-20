@@ -26,41 +26,38 @@ require ("DbaseConn.php");
         <div class="recipecontainer">
             <div class="recipe">
                 <div id="recipe1">
-                    <h6><?php $recipe = (new Dbase())->dbaseSelectAll();
-                        echo $recipe[0]['recipename'];?>
-                    </h6>
-                    <a href="RecipeDisplay.php">
+                    <a href="recipe1.php">
                         <p> <?php 
-                        $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                        echo var_dump($recipeSelect);
-
+                        $rows = (new Dbase())->dbaseselect1();
+                        echo var_dump($rows);
+                        echo $rows[0]['recipename'];
+                        
                         ?></p>
                     </a>  
                 </div>
                 <div id="recipe2">
-                <p> <?php print $recipe[1]['recipename'];?></p>
-                    <a href="recipeDisplay.php">
-                        <p> <?php print $recipe[1]['recipename'];?></p>
+                    <a href="recipe2.php">
+                        <p> <?php print $rows[1]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe3">
                     <a href="recipe3.php">
-                        <p> <?php print $recipe[2]['recipename'];?></p>
+                        <p> <?php print $rows[2]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe4">
                     <a href="recipe4.php">
-                        <p> <?php print $recipe[3]['recipename'];?></p>
+                        <p> <?php print $rows[3]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe5">
                     <a href="recipe5.php">
-                        <p> <?php print $recipe[4]['recipename'];?></p>
+                        <p> <?php print $rows[4]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe6">
                     <a href="recipe6.php">
-                        <p> <?php print $recipe[5]['recipename'];?></p>
+                        <p> <?php print $rows[5]['recipename'];?></p>
                     </a>  
                 </div>
             </div>
@@ -78,8 +75,8 @@ require ("DbaseConn.php");
     </div>
     <div class="outlinedrecipe">
         <div id="method">
-        <h3>instructions</h3>
-        <p><?php print $rows[0]['method'];?></></p>
+            <h3>instructions</h3>
+            <p><?php print_r($rows[0]);?></p>
         </div>
     </div>
         <div></div>

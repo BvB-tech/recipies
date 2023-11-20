@@ -7,5 +7,5 @@ $sql = $conn->query("SELECT id, recipename, ingredients, method FROM recipies");
 $rows = $sql->fetchAll();
 
 
-echo "<h2>" . print_r($rows[0]['ingredients']) ."</h2>";
+echo "<h2>" . print_r($myArray[0]['ingredients']) ."</h2>";
 ?>
