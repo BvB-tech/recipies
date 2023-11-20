@@ -28,7 +28,7 @@ require ("DbaseConn.php");
         <div class="recipecontainer">
             <div id="recipename">  
                 <h3>
-                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);
+                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(2);
                             print $recipeSelect[0]['recipename']
                     ?>
                 </h3>
@@ -39,14 +39,11 @@ require ("DbaseConn.php");
                     <h3>introduction</h3>
                     <?php print $recipeSelect[0]['description'];?>
                 </div>
-
                 <div id="method">
                     <h3>instructions</h3>
                     <?php print $recipeSelect[0]['method'];?>
                 </div>
-        
-                <div class="ingredientsList">
-                    <div id="ingredients">
+                <div id="ingredients">
                     <h3>ingredients</h3>
                     <?php print $recipeSelect[0]['ingredients'];?>
                 </div>

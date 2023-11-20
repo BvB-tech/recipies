@@ -26,24 +26,19 @@ require ("DbaseConn.php");
         <div class="recipecontainer">
             <div class="recipe">
                 <div id="recipe1">
-                    <p><?php $recipe = (new Dbase())->dbaseSelectAll();
-                        echo $recipe[0]['recipename'];?>
-                    </p>
-                    
+                    <?php $recipe = (new Dbase())->dbaseSelectAll();?>
                     <a href="RecipeDisplay.php">
-                        <p> <?php 
-                        $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                        
-
-                        ?></p>
+                        <p><?php echo $recipe[0]['recipename'];?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
                 </div>
                 <div id="recipe2">
-                <p> <?php print $recipe[1]['recipename'];?></p>
-                    <a href="recipeDisplay.php">
-                        <p> <?php print $recipe[1]['recipename'];?></p>
+                <a href="RecipeDisplay.php">
+                        <p><?php echo $recipe[1]['recipename'];?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(2);?></p>
                     </a>  
                 </div>
+                
                 <div id="recipe3">
                     <a href="recipe3.php">
                         <p> <?php print $recipe[2]['recipename'];?></p>
