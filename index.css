@@ -275,7 +275,7 @@ display: grid;
 
 #company{
     grid-area: company;
-    background-image: url(./images/companylogo.jpeg);
+    background-image: url(./images/cookbooklogo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
