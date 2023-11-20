@@ -80,7 +80,7 @@ require ("DbaseConn.php");
     <div class="outlinedrecipe">
         <div id="method">
         <h3>instructions</h3>
-        <p><?php print $rows[0]['method'];?></></p>
+        <p><?php print $recipe[0]['method'];?></></p>
         </div>
     </div>
         <div></div>
