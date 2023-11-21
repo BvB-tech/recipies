@@ -35,7 +35,7 @@ require ("DbaseConn.php");
                 <div id="recipe2">
                 <a href="RecipeDisplay.php">
                         <p><?php echo $recipe[1]['recipename'];?></p>
-                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(2);?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
                 </div>
                 
@@ -55,8 +55,9 @@ require ("DbaseConn.php");
                     </a>  
                 </div>
                 <div id="recipe6">
-                    <a href="recipe6.php">
+                    <a href="href=oliebollen.php">
                         <p> <?php print $recipe[5]['recipename'];?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
                 </div>
             </div>

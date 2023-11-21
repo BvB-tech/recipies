@@ -4,7 +4,7 @@ class Dbase{
 public $conn;
 
 function __construct(){
-   $this-> dbaseConnect();
+$this-> dbaseConnect();
 }
 
 public function dbaseConnect(){

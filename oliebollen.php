@@ -28,8 +28,8 @@ require ("DbaseConn.php");
         <div class="recipecontainer">
             <div id="recipename">  
                 <h3>
-                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                            print $recipeSelect[0]['recipename']
+                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(6);
+                            print $recipeSelect[6]['recipename']
                     ?>
                 </h3>
             </div>
@@ -37,15 +37,15 @@ require ("DbaseConn.php");
             <div class="recipe">
                 <div id="description">
                     <h3>introduction</h3>
-                    <?php print $recipeSelect[0]['description'];?>
+                    <?php print $recipeSelect[6]['description'];?>
                 </div>
                 <div id="method">
                     <h3>instructions</h3>
-                    <?php print $recipeSelect[0]['method'];?>
+                    <?php print $recipeSelect[6]['method'];?>
                 </div>
                 <div id="ingredients">
                     <h3>ingredients</h3>
-                    <?php print $recipeSelect[0]['ingredients'];?>
+                    <?php print $recipeSelect[6]['ingredients'];?>
                 </div>
             </div>
         </div>   
