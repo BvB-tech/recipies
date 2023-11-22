@@ -45,29 +45,29 @@ require ("DbaseConn.php");
                     </a>  
                 </div>
                 <div id="recipe2">
-                <a href="RecipeDisplay.php">
+                <a href="lasagna.php">
                         <p><?php echo $recipe[1]['recipename'];?></p>
                         <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
                 </div>
                 
                 <div id="recipe3">
-                    <a href="recipe3.php">
+                    <a href="brownbeansoup.php">
                         <p> <?php print $recipe[2]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe4">
-                    <a href="recipe4.php">
+                    <a href="spaghetti.php">
                         <p> <?php print $recipe[3]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe5">
-                    <a href="recipe5.php">
+                    <a href="breadpudding.php">
                         <p> <?php print $recipe[4]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe6">
-                    <a href="href=oliebollen.php">
+                    <a href="oliebollen.php">
                         <p> <?php print $recipe[5]['recipename'];?></p>
                         <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
