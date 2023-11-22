@@ -39,37 +39,34 @@ require ("DbaseConn.php");
             <div class="recipe">
                 <div id="recipe1">
                     <?php $recipe = (new Dbase())->dbaseSelectAll();?>
-                    <a href="surinamroti.php">
+                    <a class="recipeLink" href="surinamroti.php">
                         <p><?php echo $recipe[0]['recipename'];?></p>
-                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
                 </div>
                 <div id="recipe2">
-                <a href="lasagna.php">
-                        <p><?php echo $recipe[1]['recipename'];?></p>
-                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
+                    <a class="recipeLink" href="lasagna.php">
+                        <p><?php echo $recipe[1]['recipename'];?></p> 
                     </a>  
                 </div>
                 
                 <div id="recipe3">
-                    <a href="brownbeansoup.php">
-                        <p> <?php print $recipe[2]['recipename'];?></p>
+                    <a class="recipeLink" href="brownbeansoup.php">
+                        <p><?php print $recipe[2]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe4">
-                    <a href="spaghetti.php">
-                        <p> <?php print $recipe[3]['recipename'];?></p>
+                    <a class="recipeLink" href="spaghetti.php">
+                        <p><?php print $recipe[3]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe5">
-                    <a href="breadpudding.php">
-                        <p> <?php print $recipe[4]['recipename'];?></p>
+                    <a class="recipeLink" href="breadpudding.php">
+                        <p><?php print $recipe[4]['recipename'];?></p>
                     </a>  
                 </div>
                 <div id="recipe6">
-                    <a href="oliebollen.php">
-                        <p> <?php print $recipe[5]['recipename'];?></p>
-                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
+                    <a class="recipeLink" href="oliebollen.php">
+                        <p><?php print $recipe[5]['recipename'];?></p>
                     </a>  
                 </div>
             </div>
@@ -81,12 +78,11 @@ require ("DbaseConn.php");
         <p><?php print $recipe[0]['method'];?></></p>
         </div>
     </div>
-        <div></div>
     </main>
 
     <footer>
         <div class="footer">
-            <div id="company"></div>
+            <div id="company">-</div>
             <div id="established">est and around since 1889</div>
             <div id="disclaimer">We're not responsible for burned food or bad tasting food</div>
             <div id="copyright">FoodCompany &copy; &nbsp; &nbsp; &nbsp; all rights reserved &nbsp; </div>

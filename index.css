@@ -160,8 +160,8 @@ body{
     grid-template-areas:
                         "recipe1 recipe2 recipe3"
                         "recipe4 recipe5 recipe6";
-    margin: 1rem;
-    padding: 1rem;
+    /* margin: 1rem;
+    padding: 1rem; */
 }
 a{
     text-decoration: none;
@@ -173,6 +173,10 @@ a{
 
 a:hover{
     opacity: 0.5;
+}
+.recipeLink{
+    width: 250px;
+    height: 150px;
 }
 
 #recipe1{
@@ -191,6 +195,7 @@ display: grid;
 display: grid;
    grid-area: recipe2;
    margin: 0.5rem;
+   margin-bottom: 0.5rem;
    border: 7px solid rgb(83, 83, 87);
    background-image: url(./images/lasagna.jpeg);
    background-size: cover;
@@ -203,6 +208,7 @@ display: grid;
     display: grid;
     grid-area: recipe3;
     margin: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 5px solid rgb(83, 83, 87);
     background-image: url(./images/bruine-bonensoep.jpg);
     background-size: cover;
@@ -215,6 +221,7 @@ display: grid;
     display: grid;
     grid-area: recipe4;
     margin: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 7px solid rgb(83, 83, 87);
     background-image: url(./images/spaghetti.jpg);
     background-size: cover;
@@ -226,6 +233,7 @@ display: grid;
     display: grid;
     grid-area: recipe5;
     margin: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 7px solid rgb(83, 83, 87);
     background-image: url(./images/bread-pudding.jpg);
     background-size: cover;
@@ -237,6 +245,7 @@ display: grid;
     display: grid;
     grid-area: recipe6;
     margin: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 7px solid rgb(83, 83, 87);
     background-image: url(./images/oliebollen.jpg);
     background-size: cover;
@@ -285,7 +294,7 @@ display: grid;
 } 
 
 .footer{
-    
+    grid-area: footer;
     width: 95%;
     margin-right: 3rem;
     color: white;

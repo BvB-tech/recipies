@@ -27,11 +27,8 @@ require ("DbaseConn.php");
         </div>
         <div class="recipecontainer">
             <div id="recipename">  
-                <h3>
-                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(5);
-                            print $recipeSelect[0]['recipename']
-                    ?>
-                </h3>
+                    <?php $recipeSelect = (new Dbase())->dbaseSelectByID(2);
+                        print $recipeSelect[0]['recipename'] ?>
             </div>
 
             <div class="recipe">
