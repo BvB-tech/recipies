@@ -35,15 +35,18 @@ body{
     border-radius: 10px 10px;
 }
 
+
+
 #menu_item1{
     grid-area: menu1;
-    color: darkgray;
+    color: beige;
     border: 4px solid rgb(93, 93, 96);
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 10px 10px;
+    text-shadow: none;
 }
 #menu_item2{
     grid-area: menu2;
@@ -87,6 +90,11 @@ body{
     padding-bottom: 1rem;
     border-radius: 10px 10px;
     margin-right: 1rem;
+}
+
+.menu, a:hover{
+    opacity: 0.5;
+
 }
 
 .container{
@@ -159,10 +167,10 @@ body{
     color: rgb(80, 78, 78);
     font-weight: bolder;
     font-size: 22px;
-    text-shadow: 3px 2px beige;
+    
 }
 
-a:hover{
+.recipecontainer, a:hover{
     opacity: 0.5;
 }
 
@@ -173,7 +181,7 @@ display: grid;
    margin-bottom: 0.5rem;
    border: 7px solid rgb(83, 83, 87);
    background-image: url(./images/roti.jpg);
-   
+   text-shadow: 3px 2px beige;
    background-size: cover;
    border-radius: 5% 5%;
 }
@@ -186,6 +194,8 @@ display: grid;
    background-image: url(./images/lasagna.jpeg);
    background-size: cover;
    border-radius: 5% 5%;
+   text-shadow: 3px 2px beige;
+   
 }      
 
 #recipe3{
@@ -196,6 +206,8 @@ display: grid;
     background-image: url(./images/bruine-bonensoep.jpg);
     background-size: cover;
     border-radius: 5% 5%;
+    text-shadow: 3px 2px beige;
+    
 }
     
 #recipe4{
@@ -206,6 +218,7 @@ display: grid;
     background-image: url(./images/spaghetti.jpg);
     background-size: cover;
     border-radius: 5% 5%;
+    text-shadow: 3px 2px beige;
 }
 
 #recipe5{
@@ -215,7 +228,8 @@ display: grid;
     border: 7px solid rgb(83, 83, 87);
     background-image: url(./images/bread-pudding.jpg);
     background-size: cover;
-    border-radius: 5% 5%;     
+    border-radius: 5% 5%;
+    text-shadow: 3px 2px beige;    
 }
     
 #recipe6{
@@ -226,6 +240,7 @@ display: grid;
     background-image: url(./images/oliebollen.jpg);
     background-size: cover;
     border-radius: 5% 5%;
+    text-shadow: 3px 2px beige;
 }
 
 .introduction{
@@ -272,7 +287,7 @@ display: grid;
     height: 25vh;
     width: 95%;
     margin-right: 3rem;
-    /* grid-area: footer; */
+    color: white;
     background-color: rgb(53, 52, 52);
     border-radius: 10px 10px;
     border: 7px solid rgb(93, 93, 96);

@@ -13,10 +13,10 @@ require ("DbaseConn.php");
     <header class="header">    
         <div class="menu">    
         <div id="logo"></div> 
-        <div id="menu_item1">home</div>
-        <div id="menu_item2">recipies</div> 
-        <div id="menu_item3">team</div>
-        <div id="menu_item4">contact</div> 
+        <div id="menu_item1"><a href="">home</a></div>
+        <div id="menu_item2"><a href="">recipies</a></div> 
+        <div id="menu_item3"><a href="">team</a></div>
+        <div id="menu_item4"><a href="">contact</a></div>
         </div>
         <div id="banner"><h1>Recipebook</h1></div>    
     </header>
