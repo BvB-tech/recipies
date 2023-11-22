@@ -87,8 +87,8 @@ require ("DbaseConn.php");
     <footer>
         <div class="footer">
             <div id="company"></div>
-            <div id="established"><p>est and around since 1889</p></div>
-            <div id="disclaimer">We're not responsible for burned food or bad tasting food</p></div>
+            <div id="established">est and around since 1889</div>
+            <div id="disclaimer">We're not responsible for burned food or bad tasting food</div>
             <div id="copyright">FoodCompany &copy; &nbsp; &nbsp; &nbsp; all rights reserved &nbsp; </div>
             <div id="socials">facebook instagram x youtube</div>
         </div> 
