@@ -262,20 +262,23 @@ display: grid;
     margin: 2rem;
 }
 
-.footershell{
+.footerShell{
     grid-area: footer;
 
     
 } 
 
 .footer{
-    grid-area: footer;
+    height: 25vh;
+    width: 95%;
+    margin-right: 3rem;
+    /* grid-area: footer; */
     background-color: rgb(53, 52, 52);
     border-radius: 10px 10px;
     border: 7px solid rgb(93, 93, 96);
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 20vh 5vh 5vh 5h;
+    grid-template-rows: 8vh 5vh 5vh 5vh;
     grid-template-areas: 
                         "company company established"
                         "disclaimer disclaimer disclaimer"
@@ -283,27 +286,37 @@ display: grid;
                         "copyright copyright copyright";
 }
 
+
+
 #company{
     grid-area: company;
     background-image: url(./images/cookbooklogo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    width: 250px;
+    height: 60px
 }
 
 #established{
     grid-area: established;
-    align-content: center;
+    text-align: left;
 }
 
 #disclaimer{
     grid-area: disclaimer;
+    text-align: center;
+    margin: 2rem;
 }
 
 #copyright{
     grid-area: copyright;
+    text-align: center;
+    margin: 2rem;
 }
 
 #socials{
     grid-area: socials;
+    text-align: center;
+    margin: 2rem;
 }
