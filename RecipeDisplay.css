@@ -15,6 +15,12 @@ body{
 
 .menu, a{
     text-decoration: none;
+    color: rgb(232, 230, 227);
+    font-size: 22px;
+    font-weight: bolder;
+}
+.menu, a:hover{
+    text-decoration: none;
 }
 
 .menu{
