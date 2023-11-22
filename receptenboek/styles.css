@@ -1,0 +1,53 @@
+#header {background-color: black; color: aliceblue;  /* Adjust padding as needed */
+    text-align: center;
+    height: 0px; /* Set the desired height */}
+
+
+#header h1 {
+    margin: 0;
+}
+
+#picc {
+    width: 100%;
+    height: 500px;
+    /*text-align: center; /* Optional: Center the content within the div */
+    background-image: url('kipfoto.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Optional: Center the background image */
+    color: white;
+    font-size: 60px; 
+    font-weight: 900; /* Optional: Set text color to be visible on the background */
+}
+
+#picc h2{margin-left: 25px;}
+
+
+
+#picc img {
+    display: none; /* Hide the img element */
+}
+
+
+
+
+body {background-color: black;}
+
+
+
+body {
+    margin: 0; /* Om de standaard marges van het lichaam te verwijderen */
+}
+
+.image-container, .image-container2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.image-container img, .image-container2 img {
+    width: 25vw; /* 25% van de viewport breedte */
+    height: 25vw; /* Dezelfde hoogte als de breedte */
+    object-fit: cover; /* Behoud de aspect ratio en bedek het gebied */
+    cursor: pointer;
+    
+}
