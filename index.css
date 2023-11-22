@@ -18,9 +18,7 @@ body{
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto;
     grid-template-areas: 
-                        "logo menu1 menu2 menu3 menu4";
-    
-                        
+                        "logo menu1 menu2 menu3 menu4";                      
 }
 
 #logo{
@@ -160,15 +158,12 @@ body{
     grid-template-areas:
                         "recipe1 recipe2 recipe3"
                         "recipe4 recipe5 recipe6";
-    /* margin: 1rem;
-    padding: 1rem; */
 }
 a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    font-size: 22px;
-    
+    font-size: 22px;   
 }
 
 a:hover{
@@ -180,7 +175,7 @@ a:hover{
 }
 
 #recipe1{
-display: grid;
+   display: grid;
    grid-area: recipe1;
    margin: 0.5rem;
    margin-bottom: 0.5rem;
@@ -192,7 +187,7 @@ display: grid;
 }
 
 #recipe2{
-display: grid;
+   display: grid;
    grid-area: recipe2;
    margin: 0.5rem;
    margin-bottom: 0.5rem;
@@ -200,8 +195,7 @@ display: grid;
    background-image: url(./images/lasagna.jpeg);
    background-size: cover;
    border-radius: 5% 5%;
-   text-shadow: 3px 2px black;
-   
+   text-shadow: 3px 2px black;  
 }      
 
 #recipe3{
@@ -213,8 +207,7 @@ display: grid;
     background-image: url(./images/bruine-bonensoep.jpg);
     background-size: cover;
     border-radius: 5% 5%;
-    text-shadow: 3px 2px black;
-    
+    text-shadow: 3px 2px black;  
 }
     
 #recipe4{
@@ -288,9 +281,7 @@ display: grid;
 }
 
 .footerShell{
-    grid-area: footer;
-
-    
+    grid-area: footer;   
 } 
 
 .footer{
