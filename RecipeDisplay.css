@@ -12,6 +12,10 @@ body{
     height: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 .menu{
     display: grid;
     place-items: center;
