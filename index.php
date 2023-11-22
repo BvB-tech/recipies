@@ -22,12 +22,24 @@ require ("DbaseConn.php");
     </header>
     <main class="container">  
                 <div id="hero"></div>
+
+                <div class="introduction">
+        <div id="method">
+            <h3>introduction</h3>
+            <p>
+                The majority of us love to cook or at least try to cook some food, perhaps daily or on special occasions. We do keep recipes, some in the papers, some have organized books, some scribbled it on a convenient place like kitchen boards, some just permanently place them on their brains.
+                Cooking is an art, food gratifies the audience when we cook with a secret ingredient called “Love”.
+                I have not learned cooking, but loves to cook for my family. Like someone said, “I am an accidental home cook”.Picked up the skill gradually when I generate some interest in cooking. The level of satisfaction I get from cooking is unexplainable, especially when my family enjoys them with a big wide smile on their face.
+                That smile gives me the confidence, that smile is my pillar and inspiration, that smile gives me the reason to venture into new recipes. There is a saying.
+            </p>
+        </div>
+    </div>
         </div>
         <div class="recipecontainer">
             <div class="recipe">
                 <div id="recipe1">
                     <?php $recipe = (new Dbase())->dbaseSelectAll();?>
-                    <a href="RecipeDisplay.php">
+                    <a href="surinamroti.php">
                         <p><?php echo $recipe[0]['recipename'];?></p>
                         <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                     </a>  
@@ -62,17 +74,7 @@ require ("DbaseConn.php");
                 </div>
             </div>
         </div>
-    <div class="introduction">
-        <div id="method">
-            <h3>introduction</h3>
-            <p>
-                The majority of us love to cook or at least try to cook some food, perhaps daily or on special occasions. We do keep recipes, some in the papers, some have organized books, some scribbled it on a convenient place like kitchen boards, some just permanently place them on their brains.
-                Cooking is an art, food gratifies the audience when we cook with a secret ingredient called “Love”.
-                I have not learned cooking, but loves to cook for my family. Like someone said, “I am an accidental home cook”.Picked up the skill gradually when I generate some interest in cooking. The level of satisfaction I get from cooking is unexplainable, especially when my family enjoys them with a big wide smile on their face.
-                That smile gives me the confidence, that smile is my pillar and inspiration, that smile gives me the reason to venture into new recipes. There is a saying.
-            </p>
-        </div>
-    </div>
+   
     <div class="outlinedrecipe">
         <div id="method">
         <h3>instructions</h3>
