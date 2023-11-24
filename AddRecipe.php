@@ -5,16 +5,22 @@ class Recipe{
 
 public $userName;
 public $passwd;
+public $conn;
 
 function DbaseConnect(){  
 
-$userName = 'root';
-$passwd = '';
-$conn = new PDO('mysql:host=localhost;dbname=recipies', $userName, $passwd);
+$this-> userName = 'root';
+$this-> passwd = '';
+$this-> conn = new PDO('mysql:host=localhost;dbname=recipies', $this->userName, $this->passwd);
+echo "connection made";
 }
 
+function __construct(){
+    $this->DbaseConnect();
+    $this->addRecipe();
+}
 
-function AddRecipe(){
+function addRecipe(){
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $recipeName = $_POST['recipe_name'];
@@ -23,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description = $_POST['description'];
 
     
-    $stmt = $conn->prepare("INSERT INTO recipies (recipename, ingredients, method, description) VALUES (:recipeName, :ingredients, :method, :description)");
+    $stmt = $this->conn->prepare("INSERT INTO recipies (recipename, ingredients, method, description) VALUES (:recipeName, :ingredients, :method, :description)");
     $stmt->bindParam(':recipeName', $recipeName);
     $stmt->bindParam(':ingredients', $ingredients);
     $stmt->bindParam(':method', $method);
@@ -33,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
 
     
-    echo "New recipe added!"; 
+    echo "New recipe succesfully added!"; 
 } 
 }
 }

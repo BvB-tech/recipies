@@ -6,15 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="shareyourownrecipe.css">
+    <link rel="stylesheet" href="./css/shareyourownrecipe.css">
 </head>
 <body>
     <header class="header">    
         <div class="menu">    
         <div id="logo"></div> 
-        <div id="menu_item1"><a href="">home</a></div>
+        <div id="menu_item1"><a href="index.php">home</a></div>
         <div id="menu_item2"><a href="">recipe library</a></div> 
-        <div id="menu_item3"><a href="addrecipe.php">add a recipe</a></div>
+        <div id="menu_item3"><a href="shareyourownrecipe.php">add a recipe</a></div>
         <div id="menu_item4"><a href="">contact</a></div>
         </div>
            
@@ -36,10 +36,10 @@
         </div>       
         <div id="addRecipeForm"> 
             <h2>Add your recipe here!</h2><br>
-            <form id="form" action="add_recipe.php" method="POST">
+            <form id="form" action="recipeaddresult.php" method="POST">
                 Recipe Name: <input type="text" name="recipe_name"><br><br>
                 Ingredients: <textarea name="ingredients"></textarea><br><br>
-                Method: <textarea name="method"></textarea><br>
+                Method: <textarea name="method"></textarea><br><br>
                 Description: <textarea name="description"></textarea><br><br>
                 <input type="submit" value="Add Recipe">
             </form>

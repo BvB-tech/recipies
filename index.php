@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 require_once ("DbaseConn.php");
-require_once ("AddRecipe.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,13 +8,13 @@ require_once ("AddRecipe.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header class="header">    
         <div class="menu">    
         <div id="logo"></div> 
-        <div id="menu_item1"><a href="">home</a></div>
+        <div id="menu_item1"><a href="index.php">home</a></div>
         <div id="menu_item2"><a href="">recipe library</a></div> 
         <div id="menu_item3"><a href="shareyourownrecipe.php">add a recipe</a></div>
         <div id="menu_item4"><a href="">contact</a></div>
@@ -71,17 +71,8 @@ require_once ("AddRecipe.php");
                     <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
                 </a>  
             </div>
-        </div>
-   
-    <div class="outlinedrecipe">
-        <div id="method">
-        <h3>instructions</h3>
-        <p><?php print $recipe[0]['method'];?></></p>
-        </div>
-    </div>
-        <div></div>
+        </div>  
     </main>
-
     <footer>
         <div class="footer">
             <div id="company"></div>
