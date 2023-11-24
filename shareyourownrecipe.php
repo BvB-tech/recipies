@@ -1,43 +1,58 @@
 <?php declare(strict_types = 1);
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shareyourownrecipe.css">
 </head>
 <body>
     <header class="header">    
         <div class="menu">    
         <div id="logo"></div> 
         <div id="menu_item1"><a href="">home</a></div>
-        <div id="menu_item2"><a href="addrecipe.php">recipe library</a></div> 
-        <div id="menu_item3"><a href="">add a recipe</a></div>
+        <div id="menu_item2"><a href="">recipe library</a></div> 
+        <div id="menu_item3"><a href="addrecipe.php">add a recipe</a></div>
         <div id="menu_item4"><a href="">contact</a></div>
         </div>
-        <div id="banner"><h1>Recipebook</h1></div>    
+           
     </header>
     <main class="container">  
-                <div id="hero"></div>
-
-                <div class="introduction">
-        <div id="method">
-            <h3>introduction</h3>
-            <p>
-            Foodgawker
-
-When you think of food-sharing sites, Foodgawker probably first comes to mind. It’s one of many “gawker” websites (Weddinggawker is another example of a post aggregate site!), but Foodgawker is where you’ll want to submit your recipes.
-Screenshot of the Foodgawker homepage
-
-Foodgawker needs to accept your recipe before they actually post it, and they review each photo to make sure that the food looks appealing, that the white balance looks natural, and that the composition is tempting. You can read more about Foodgawker’s criteria and submission guidelines here.
-
-We like Foodgawker because content creators submit links to their recipes, rather than the full recipes themselves. This means that if a Foodgawker user wants your recipe, they’ll need to go to your site to get it.
-
-Pro Tip: When you submit your recipes to Foodgawker, make sure you include an enticing description to help encourage clicks through to your site! Your description will be shown directly under your photo on Foodgawker’s feed.
-            </p>
-        </div>
-    </div>
+            <div id="hero"></div>
+            <div id="banner"><h1>Recipebook</h1></div> 
+            <div class="introduction">
+                <div id="introText">
+                    <h2>Share your utltra fattening recipe</h2><br>
+                    <p><h3>How it works</h3></p><br>
+                    <p>When you think of food-sharing sites, Cookbook probably first comes to mind. It’s one of many “Cookbook” websites (Weddinggawker is another example of a post aggregate site!), but Cookbook is where you’ll want to submit your recipes.
+                        The Cookbook homepage needs to accept your recipe before we actually post it, and they review each recipe to make sure that the recipe is fattening enough, that the fat and carb balance fills you up enough, and that the sugarbalance is creating a rush. You can read more about Cookbook’s criteria and submission guidelines here.
+                        We like Cookbook because content creators submit original nrecipes, rather than dull low carb or other woke nonsens recipies. This means that if a Cookbook user wants your recipe, they’ll need to to set aside all those inhibitionse to get it.
+                        Pro Tip: When you submit your recipes to Cookbook, make sure you include an enticing description to help encourage likes for your efforts put in the recipe! Your description will be shown directly under your recipe on cookbooks library of recipies.
+                    </p>
+                </div>
+            </div>
+        </div>       
+        <div id="addRecipeForm"> 
+            <h2>Add your recipe here!</h2><br>
+            <form id="form" action="add_recipe.php" method="POST">
+                Recipe Name: <input type="text" name="recipe_name"><br><br>
+                Ingredients: <textarea name="ingredients"></textarea><br><br>
+                Method: <textarea name="method"></textarea><br>
+                Description: <textarea name="description"></textarea><br><br>
+                <input type="submit" value="Add Recipe">
+            </form>
+        </div>  
+    </main>
+    <footer>
+        <div class="footer">
+            <div id="company"></div>
+            <div id="established">est and around since 1889</div>
+            <div id="disclaimer">We're not responsible for burned food or bad tasting food</div>
+            <div id="copyright">FoodCompany &copy; &nbsp; &nbsp; &nbsp; all rights reserved &nbsp; </div>
+            <div id="socials">facebook instagram x youtube</div>
+        </div> 
+    </footer>
+</body>
+</html>
