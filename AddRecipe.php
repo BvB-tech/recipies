@@ -1,5 +1,5 @@
 <?php declare(strict_types = 1);
-require ("DbaseConn.php");
+require_once ("DbaseConn.php");
 
 class Recipe{
 

@@ -15,7 +15,7 @@ require ("AddRecipe.php");
         <div class="menu">    
         <div id="logo"></div> 
         <div id="menu_item1"><a href="">home</a></div>
-        <div id="menu_item2"><a href="addrecipe.php">recipe library</a></div> 
+        <div id="menu_item2"><a href="shareyourownrecipe.php">recipe library</a></div> 
         <div id="menu_item3"><a href="">add a recipe</a></div>
         <div id="menu_item4"><a href="">contact</a></div>
         </div>
