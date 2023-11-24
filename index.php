@@ -1,5 +1,6 @@
 <?php declare(strict_types = 1);
 require ("DbaseConn.php");
+require ("AddRecipe.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +15,8 @@ require ("DbaseConn.php");
         <div class="menu">    
         <div id="logo"></div> 
         <div id="menu_item1"><a href="">home</a></div>
-        <div id="menu_item2"><a href="">recipies</a></div> 
-        <div id="menu_item3"><a href="">team</a></div>
+        <div id="menu_item2"><a href="addrecipe.php">recipe library</a></div> 
+        <div id="menu_item3"><a href="">add a recipe</a></div>
         <div id="menu_item4"><a href="">contact</a></div>
         </div>
         <div id="banner"><h1>Recipebook</h1></div>    
