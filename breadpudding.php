@@ -50,14 +50,18 @@ require ("DbaseConn.php");
             </div>
         </div>   
     </main>
-
     <footer>
         <div class="footer">
             <div id="company"></div>
-            <div id="established"><p>est and around since 1889</p></div>
-            <div id="disclaimer">We're not responsible for burned food or bad tasting food</p></div>
+            <div id="established">est and around since 1889</div>
+            <div id="disclaimer">We're not responsible for burned food or bad tasting food</div>
             <div id="copyright">FoodCompany &copy; &nbsp; &nbsp; &nbsp; all rights reserved &nbsp; </div>
-            <div id="socials">facebook instagram x youtube</div>
+            <div class="socials">
+                    <img src="images/facebook_icon.png" alt="facebook">
+                    <img src="images/instagram_icon.png" alt="instagram">
+                    <img src="images/x_icon.png" alt="X">
+                    <img src="images/youtube_icon.png" alt="youtube">
+                </div>
         </div> 
     </footer>
 </body>
