@@ -8,7 +8,7 @@ require ("DbaseConn.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="RecipeDisplay.css">
+    <link rel="stylesheet" href="./css/RecipeDisplay.css">
 </head>
 <body>
     <header class="header">    
