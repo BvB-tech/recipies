@@ -23,6 +23,14 @@ a{
 
 a:hover{
     opacity: 0.5;
+    color: darkgrey;
+    text-shadow:1px 1px #7b7265;
+}
+
+a:visited{
+    color: darkgrey;
+    text-shadow:1px 1px #7b7265;
+
 }
 
 .header{
