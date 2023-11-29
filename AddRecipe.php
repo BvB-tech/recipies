@@ -3,8 +3,8 @@ require_once ("DbaseConn.php");
 
 class Recipe{
 
-public $userName;
-public $passwd;
+private $userName;
+private $passwd;
 public $conn;
 
 function DbaseConnect(){  
