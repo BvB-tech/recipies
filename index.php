@@ -1,30 +1,9 @@
-<?php declare(strict_types = 1);
-require_once ("DbaseConn.php");
+<?php include('header.php'); ?>
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-    <header class="header">    
-        <div class="menu">    
-            <div id="logo"></div> 
-            <div id="menu_item1"><a href="index.php">home</a></div>
-            <div id="menu_item2"><a href="">recipe library</a></div> 
-            <div id="menu_item3"><a href="shareyourownrecipe.php">add a recipe</a></div>
-            <div id="menu_item4"><a href="">contact</a></div>
-        </div>     
-    </header>
-    <main class="container">  
-        <div id="hero"></div>
-        <div id="banner"><h1>Recipebook</h1></div> 
-        <div class="introduction">
-            <div id="method">
+        <main>  
+            <div class="banner"></div>
+            <h1 class="title">Recipebook</h1>
+            <div class="introduction">
                 <h3>introduction</h3>
                 <p>
                     The majority of us love to cook or at least try to cook some food, perhaps daily or on special occasions. We do keep recipes, some in the papers, some have organized books, some scribbled it on a convenient place like kitchen boards, some just permanently place them on their brains.
@@ -33,58 +12,29 @@ require_once ("DbaseConn.php");
                     That smile gives me the confidence, that smile is my pillar and inspiration, that smile gives me the reason to venture into new recipes. There is a saying.
                 </p>
             </div>
-        </div>  
-        <div class="recipe">
-            <div id="recipe1">
-                <?php $recipe = (new Dbase())->dbaseSelectAll();?>
-                <a href="surinamroti.php">
-                    <p><?php echo $recipe[0]['recipename'];?></p>
-                    <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
-                </a>  
+            <div class="recipies flex">
+                <div class="recipe">
+                    <?php $recipe = (new Dbase())->dbaseSelectAll();?>
+                    <a href="surinamroti.php">
+                        <img src="images/roti.jpg" alt="">
+                        <p><?php echo $recipe[0]['recipename'];?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
+                    </a>  
+                </div>
+                <div class="recipe">
+                <a href="lasagna.php">
+                    <img src="images/lasagna.jpeg" alt="">
+                        <p><?php echo $recipe[1]['recipename'];?></p>
+                        <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
+                    </a>  
+                </div>
+                <div class="recipe">
+                    <a href="brownbeansoup.php">
+                        <img src="images/bruine-bonensoep.jpg" alt="">
+                        <p> <?php print $recipe[2]['recipename'];?></p>
+                    </a>  
+                </div>
             </div>
-            <div id="recipe2">
-            <a href="lasagna.php">
-                    <p><?php echo $recipe[1]['recipename'];?></p>
-                    <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
-                </a>  
-            </div>
-            
-            <div id="recipe3">
-                <a href="brownbeansoup.php">
-                    <p> <?php print $recipe[2]['recipename'];?></p>
-                </a>  
-            </div>
-            <div id="recipe4">
-                <a href="spaghetti.php">
-                    <p> <?php print $recipe[3]['recipename'];?></p>
-                </a>  
-            </div>
-            <div id="recipe5">
-                <a href="breadpudding.php">
-                    <p> <?php print $recipe[4]['recipename'];?></p>
-                </a>  
-            </div>
-            <div id="recipe6">
-                <a href="oliebollen.php">
-                    <p> <?php print $recipe[5]['recipename'];?></p>
-                    <p><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);?></p>
-                </a>  
-            </div>
-        </div>  
-    </main>
-    <footer>
-        <div class="footer">
-            <div id="company"></div>
-            <div id="established">est and around since 1889</div>
-            <div id="disclaimer">We're not responsible for burned food or bad tasting food</div>
-            <div id="copyright">FoodCompany &copy; &nbsp; &nbsp; &nbsp; all rights reserved &nbsp; </div>
-            <div class="socials">
-                    <img src="images/facebook_icon.png" alt="facebook">
-                    <img src="images/instagram_icon.png" alt="instagram">
-                    <img src="images/x_icon.png" alt="X">
-                    <img src="images/youtube_icon.png" alt="youtube">
-            </div>
-        </div> 
-    </footer>
-</body>
-</html>
+        </main>
+
+<?php include('footer.php'); ?>

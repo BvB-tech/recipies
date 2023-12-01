@@ -12,7 +12,7 @@ function DbaseConnect(){
 $this-> userName = 'root';
 $this-> passwd = '';
 $this-> conn = new PDO('mysql:host=localhost;dbname=recipies', $this->userName, $this->passwd);
-echo "connection made";
+//echo "connection made";
 }
 
 function __construct(){
