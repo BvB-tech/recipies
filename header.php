@@ -16,8 +16,8 @@ require_once ("DbaseConn.php");
             <nav class="menu flex">    
                 <img src="images/logo2.jpg" alt=""> 
                 <a href="index.php">Home</a>
-                <a href="">Recipe library</a>
+                <a href="recipelibrary.php">Recipe library</a>
                 <a href="shareyourownrecipe.php">Add a recipe</a>
-                <a href="">Contact</a>
+                <a href="contact.php">Contact</a>
             </nav>
         </header>

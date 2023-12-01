@@ -5,7 +5,7 @@
         <div class="recipe-container">
             <div class="title">  
                 <h3><?php $recipeSelect = (new Dbase())->dbaseSelectByID(1);
-                        print $recipeSelect[0]['recipeName']; ?>
+                        print $recipeSelect[0]['recipename']; ?>
                 </h3>
             </div>
             <div class="recipe-details">
